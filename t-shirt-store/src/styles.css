@@ -1,0 +1,119 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Main Store Container */
+.tshirt-store {
+    width: 90%;
+    max-width: 1200px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Title */
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Grid Layout for T-Shirt List */
+.tshirt-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* T-Shirt Card */
+.tshirt-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.tshirt-card:hover {
+    transform: scale(1.05);
+}
+
+/* T-Shirt Image */
+.tshirt-card img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* T-Shirt Name */
+.tshirt-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Price */
+.tshirt-price {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Stock Info */
+.stock-info {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Dropdown & Button Container */
+.purchase-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Quantity Dropdown */
+.quantity-dropdown {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Buy Button */
+.buy-button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.buy-button:hover {
+    background: #555;
+}
+
+/* Out of Stock Style */
+.out-of-stock {
+    color: red;
+    font-weight: bold;
+}
